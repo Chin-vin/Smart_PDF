@@ -24,10 +24,10 @@ function Page() {
   }, [tempResult]);
 
   return (
-    <div className={`ml-60 transition-all duration-300 ${dialogOpen ? "blur-md" : ""}`}>
+    <div className={`p-10 transition-all duration-300 ${dialogOpen ? "blur-md" : ""}`}>
       <h2 className='font-bold text-3xl'>Workspace</h2>
       {/* <UploadPdf setDialogOpen={setDialogOpen} /> */}
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-15 gap-2 mr-2 xl:grid-cols-5' >
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mr-2 xl:grid-cols-5' >
         {fileList.length > 0 ? (
           fileList.map((file, index) => (
             <Link href={'/workspace/'+file?.fileId} key={index}>

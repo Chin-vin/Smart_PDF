@@ -1,19 +1,14 @@
-import React from 'react'
-import Sidebar from './_components/Sidebar'
+"use client";
 
-function  DashboardLayout({children}) {
+import React from 'react';
+import Layout from './_components/Layout';
+
+function DashboardLayout({ children }) {
   return (
-    <div className='flex gap-2 justify-between'>
-        <div className=' md:w-64 h-screen fixed'>
-            <Sidebar />
-        </div>
-
-        <div className='md:ml-64'>
-            {children}
-        </div>
-
-    </div>
-  )
+    <Layout>
+      {children}
+    </Layout>
+  );
 }
 
-export default  DashboardLayout;
+export default DashboardLayout;
