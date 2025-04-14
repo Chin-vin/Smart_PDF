@@ -6,7 +6,7 @@ import UploadPdf from './UploadPdf';
 
 function Sidebar() {
   return (
-    <aside className="w-[250px] border-r bg-white dark:bg-gray-900 flex flex-col p-5">
+    <aside className="w-[250px] md:w-[250px] lg:w-[300px] border-r bg-white dark:bg-gray-900 flex flex-col p-5">
       {/* <Image src={'/logo.svg'} alt="logo" loading="lazy" width={40} height={40} /> */}
 
       <div className="mt-5">
